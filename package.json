@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon  server.js --exec babel-node --presets es2015",
-    "test": "jasmine-node spec --autotest --color",
+    "test": "jasmine-node spec --forceexit",
     "_comment": "Note: --exit in the test element is to force the test program to exit after finishing in case we use done()",
-    "coverage": "./node_modules/.bin/nyc --all -x=['spec/unit/*.js'] --reporter=lcov --reporter=text-summary npm run test"
+    "coverage": "./node_modules/.bin/nyc --all -x=['spec/unit/*.js'] --reporter=lcov --reporter=text-lcov npm run test"  
   },
   "repository": {
     "type": "git",
