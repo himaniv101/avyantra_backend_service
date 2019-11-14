@@ -8,7 +8,7 @@ class HospitalContQueries{
         ' WHERE m_hospitals.hospital_id = :hospital_id '
         return query
     }
-
+    
     static getRegisteredRefferal_searchTextNull(end, start){
         let query = `SELECT m_referral_doctors.referral_id, m_referral_doctors.first_name,m_referral_doctors.last_name,
         m_users.address,m_users.city,m_users.contact_number,
