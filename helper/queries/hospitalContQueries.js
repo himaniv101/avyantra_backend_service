@@ -1,4 +1,4 @@
-export class HospitalContQueries{
+class HospitalContQueries{
 
     static getHospitalProfile_query(){
         let query = 'SELECT m_hospitals.hospital_id,m_hospitals.user_id,m_hospitals.hospital_name, '+
@@ -207,3 +207,4 @@ export class HospitalContQueries{
     }
 
 }
+exports.HospitalContQueries = HospitalContQueries
