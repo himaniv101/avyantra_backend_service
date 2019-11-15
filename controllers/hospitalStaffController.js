@@ -16,6 +16,9 @@ const allQueries = require('../helper/queries/hospitalStaffContQueries');
 
 
 
+
+
+
 exports.getHospitalStaffRoles =(req,res,next)=>{
     let query=allQueries.HospitalStaffQueries.getHospitalStaffRoles_query();
     sequelize.query(query,
