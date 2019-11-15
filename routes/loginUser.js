@@ -1,11 +1,16 @@
-import { hospital_model,user_model,hospital_branch_model,user_type_model } from '../sequelize';
+// import { hospital_model,user_model,hospital_branch_model,user_type_model } from '../sequelize';
+const hospital_model=require('../sequelize');
+const user_model=require('../sequelize');
+const hospital_branch_model=require('../sequelize');
+const user_type_model=require('../sequelize');
+const bcrypt=require('bcrypt');
+const res_help=require('../helper/res');
+const constant=require('../helper/constant');
+const generatePasscode=require('../helper/util');
+const portDecider=require('../helper/util');
+
+
 const pReadingModels = require('../sequelize');
-import bcrypt from 'bcrypt';
-import jwtSecret from '../config/jwtConfig';
-import jwt from 'jsonwebtoken';
-import res_help from '../helper/res';
-import constant from '../helper/constant';
-import { generatePasscode, portDecider } from '../helper/util';
 const responseHelper = require('../helper/res');
 let Validator = require('validatorjs');
 const BCRYPT_SALT_ROUNDS = constant.bcrypt_solt_text;

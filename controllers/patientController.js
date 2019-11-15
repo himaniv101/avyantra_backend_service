@@ -3,7 +3,6 @@ const { validationResult } = require('express-validator/check')
 const responseHelper = require('../helper/res')
 const constant = require('../helper/constant')
 const { sequelize } = require('../sequelize')
-const queries = require('../helper/queries')
 const mapper = require('../mapper/mapper')
 const excel = require('exceljs');
 const enumConst = require('../helper/enum')

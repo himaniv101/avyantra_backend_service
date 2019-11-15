@@ -1,24 +1,21 @@
-import {
-  sequelize,
-  patient_model,
-  patient_level_model,
-  basic_model,
-  general_model,
-  maternal_model,
-  baby_appear_model,
-  baby_resp_model,
-  baby_cv_model,
-  baby_cns_model,
-  baby_git_model,
-  baby_final_model,
-  baby_antibiotic_model,
-  baby_investigation_model
-} from '../sequelize';
-import bcrypt from 'bcrypt';
-import jwtSecret from '../config/jwtConfig';
-import jwt from 'jsonwebtoken';
-import res_help from '../helper/res';
-import constant from '../helper/constant';
+const sequelize=require('../sequelize');
+const patient_model=require('../sequelize');
+const patient_level_model=require('../sequelize');
+const basic_model=require('../sequelize');
+const general_model=require('../sequelize');
+const maternal_model=require('../sequelize');
+const baby_appear_model=require('../sequelize');
+const baby_resp_model=require('../sequelize');
+const baby_cv_model=require('../sequelize');
+const baby_cns_model=require('../sequelize');
+const baby_git_model=require('../sequelize');
+const baby_final_model=require('../sequelize');
+const baby_antibiotic_model=require('../sequelize');
+const baby_investigation_model=require('../sequelize');
+const bcrypt=require('bcrypt');
+const res_help=require('../helper/res');
+const constant=require('../helper/constant');
+
 let Validator = require('validatorjs');
 const BCRYPT_SALT_ROUNDS = constant.bcrypt_solt_text;
 module.exports = app => {

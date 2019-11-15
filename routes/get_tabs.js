@@ -1,22 +1,9 @@
-import {
-  baby_appear_model,
-  general_model,
-  maternal_model,
-  baby_cns_model,
-  sequelize,
-  baby_git_model,
-  baby_resp_model,
-  baby_final_model,
-  baby_cv_model,
-  baby_antibiotic_model,
-  baby_investigation_model
-} from '../sequelize';
+const maternal_model=require('../sequelize');
+const sequelize=require('../sequelize');
+const bcrypt=require('bcrypt');
+const res_help=require('../helper/res');
+const constant=require('../helper/constant');
 
-import bcrypt from 'bcrypt';
-import jwtSecret from '../config/jwtConfig';
-import jwt from 'jsonwebtoken';
-import res_help from '../helper/res';
-import constant from '../helper/constant';
 let Validator = require('validatorjs');
 const BCRYPT_SALT_ROUNDS = constant.bcrypt_solt_text;
 module.exports = app => {

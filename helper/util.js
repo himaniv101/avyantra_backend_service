@@ -1,5 +1,5 @@
 const enumConst = require('../helper/enum')
-const server = require('../server')
+//const server = require('../server')
 
 exports.getStaffPermission =(permissionId,result,permissionResult) =>{
 console.log ('permissionResult :' ,permissionResult) 
@@ -69,13 +69,14 @@ exports.generatePasscode =()=>{
     return result;
  }
 
+ /*
 exports.portDecider = ()=>{
     var be_port = server.port
     var fe_port;
     switch (be_port) {
         case 8080:
             fe_port = ":"+4200
-            break;
+            break;z
         case 8081:
             fe_port = ''
             break;
@@ -84,4 +85,4 @@ exports.portDecider = ()=>{
             break;
     }
     return fe_port;
-}
+}*/

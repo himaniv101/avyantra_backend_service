@@ -1,7 +1,7 @@
-import express from 'express';
-import Cors from 'cors';
-import bodyParser from 'body-parser';
-import logger from 'morgan';
+const express=require('express');
+const Cors=require('cors');
+const bodyParser=require('body-parser');
+const logger=require('morgan');
 const responseHelper = require('./helper/res')
 const constant = require('./helper/constant')
 const multer = require('multer');
@@ -13,8 +13,9 @@ const hroutes = require('./routes/hospitalRoutes')
 const hbroutes = require('./routes/hospitalBranchRoutes')
 const hsroutes = require('./routes/hospitalStaffRoutes')
 
-console.error(process.env.API_PORT)
-const API_PORT = process.env.API_PORT || 8081;
+const API_PORT = process.env.API_PORT || 8080;
+
+console.error("env :",process.env.API_PORT)
 
 app.use(Cors());
 app.use(bodyParser.urlencoded({extended: true }));
